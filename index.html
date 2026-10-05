@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hello, World! · The Advanced Programming Masterclass</title>
+<meta name="description" content="A 12-week advanced masterclass that takes you from your first print statement to shipping real, production-grade software.">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="stylesheet" href="vendor/fonts.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="brand"><span class="prompt">$</span> hello<span class="brand-dot">.</span>world</a>
+    <nav class="nav-links" id="navLinks" aria-label="Primary">
+      <a href="#features">Why</a>
+      <a href="#curriculum">Curriculum</a>
+      <a href="#playground">Playground</a>
+      <a href="#mentors">Mentors</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#cta" class="btn btn-primary btn-sm">Enroll now <i data-lucide="arrow-up-right"></i></a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-copy reveal">
+      <span class="badge"><i data-lucide="sparkles"></i> Next cohort · applications open</span>
+      <h1>Hello,<br><span class="grad">World!</span></h1>
+      <p class="lede">The advanced masterclass that turns complete beginners into confident programmers — one honest line of code at a time.</p>
+      <div class="hero-actions">
+        <a href="#cta" class="btn btn-primary">Start learning <i data-lucide="rocket"></i></a>
+        <a href="#curriculum" class="btn btn-ghost"><i data-lucide="list-checks"></i> View curriculum</a>
+      </div>
+      <ul class="hero-points">
+        <li><i data-lucide="check"></i> Zero prerequisites</li>
+        <li><i data-lucide="check"></i> 84 hands-on lessons</li>
+        <li><i data-lucide="check"></i> 1 real capstone project</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="terminal" id="terminal">
+        <div class="terminal-bar">
+          <span class="dot d-red"></span><span class="dot d-yellow"></span><span class="dot d-green"></span>
+          <span class="terminal-title">~/masterclass/lesson-01</span>
+          <span class="terminal-lang" id="termLang">python</span>
+        </div>
+        <div class="terminal-body">
+          <div class="term-row"><span class="prompt">➜</span><span class="path">~/hello-world</span><span class="code" id="typedCode"></span><span class="caret"></span></div>
+          <div class="term-row out" id="typedOut">Hello, World!</div>
+          <div class="term-row muted" id="termHint">$ run lesson_01<span class="dots-anim"></span></div>
+        </div>
+      </div>
+      <span class="float-chip c1">{ }</span>
+      <span class="float-chip c2">01</span>
+      <span class="float-chip c3">#!/usr/bin/env</span>
+      <span class="float-chip c4">&lt;/&gt;</span>
+    </div>
+  </div>
+
+  <div class="container stats reveal" id="stats">
+    <div class="stat"><span class="stat-num" data-count="12">0</span><span class="stat-label">week program</span></div>
+    <div class="stat"><span class="stat-num" data-count="84">0</span><span class="stat-label">lessons</span></div>
+    <div class="stat"><span class="stat-num" data-count="120" data-suffix="k+">0</span><span class="stat-label">learners</span></div>
+    <div class="stat"><span class="stat-num" data-count="4.9" data-decimals="1">0</span><span class="stat-label">rating</span></div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marqueeTrack"></div>
+</div>
+<section class="section" id="features">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="kicker"><i data-lucide="layers"></i> why hello world</span>
+      <h2>Most courses teach syntax.<br>We teach <span class="grad">thinking</span>.</h2>
+      <p class="sub">Every concept is introduced with a problem you actually want to solve, then a machine-precise solution.</p>
+    </header>
+    <div class="grid features">
+      <article class="card reveal"><i data-lucide="code-2" class="ic ic-green"></i><h3>Code first</h3><p>No 40-minute theory videos before you write anything. You type on minute one.</p></article>
+      <article class="card reveal"><i data-lucide="cpu" class="ic ic-yellow"></i><h3>Under the hood</h3><p>Memory, the stack and the heap explained with diagrams, not hand-waving.</p></article>
+      <article class="card reveal"><i data-lucide="git-pull-request" class="ic ic-blue"></i><h3>Real workflow</h3><p>Version control, debugging and code review — the parts tutorials skip.</p></article>
+      <article class="card reveal"><i data-lucide="bug" class="ic ic-red"></i><h3>Debug deliberately</h3><p>A systematic method for finding bugs instead of random-editing and hoping.</p></article>
+      <article class="card reveal"><i data-lucide="graduation-cap" class="ic ic-purple"></i><h3>Mentor feedback</h3><p>Every capstone is reviewed by a working engineer with line-by-line notes.</p></article>
+      <article class="card reveal"><i data-lucide="infinity" class="ic ic-aqua"></i><h3>Lifetime access</h3><p>All future updates, new lessons and the alumni community included forever.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="curriculum">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="kicker"><i data-lucide="map"></i> curriculum</span>
+      <h2>Twelve weeks, <span class="grad">six milestones</span></h2>
+      <p class="sub">Each module unlocks a working program you could ship today.</p>
+    </header>
+    <div class="acc" id="curriculumAcc">
+      <details class="acc-item reveal" open>
+        <summary><span class="acc-num">01</span><span class="acc-title">Thinking like a machine</span><span class="acc-meta">10 lessons · 4h</span><i data-lucide="chevron-down" class="acc-chev"></i></summary>
+        <div class="acc-body"><p>Bits, bytes, variables and the assignment operator. You will write your first program and deliberately break it on purpose to see what an error really means.</p><ul class="tags"><li>variables</li><li>types</li><li>I/O</li><li>errors</li></ul></div>
+      </details>
+      <details class="acc-item reveal">
+        <summary><span class="acc-num">02</span><span class="acc-title">Control flow and logic</span><span class="acc-meta">14 lessons · 6h</span><i data-lucide="chevron-down" class="acc-chev"></i></summary>
+        <div class="acc-body"><p>Conditions, loops and the art of nesting less. Build a number-guessing game, then refactor it until it is readable by a stranger.</p><ul class="tags"><li>if/else</li><li>loops</li><li>refactoring</li></ul></div>
+      </details>
+      <details class="acc-item reveal">
+        <summary><span class="acc-num">03</span><span class="acc-title">Functions &amp; composition</span><span class="acc-meta">12 lessons · 5h</span><i data-lucide="chevron-down" class="acc-chev"></i></summary>
+        <div class="acc-body"><p>Parameters, return values, scope and pure functions. Small pieces that compose into something big — the core habit of professional engineers.</p><ul class="tags"><li>scope</li><li>recursion</li><li>pure functions</li></ul></div>
+      </details>
+      <details class="acc-item reveal">
+        <summary><span class="acc-num">04</span><span class="acc-title">Data structures that matter</span><span class="acc-meta">16 lessons · 7h</span><i data-lucide="chevron-down" class="acc-chev"></i></summary>
+        <div class="acc-body"><p>Lists, dictionaries, sets and queues — plus when each one wins. You will implement them yourself before using a library.</p><ul class="tags"><li>arrays</li><li>hash maps</li><li>big-O</li></ul></div>
+      </details>
+      <details class="acc-item reveal">
+        <summary><span class="acc-num">05</span><span class="acc-title">Files, errors &amp; debugging</span><span class="acc-meta">12 lessons · 5h</span><i data-lucide="chevron-down" class="acc-chev"></i></summary>
+        <div class="acc-body"><p>Persistence, exceptions and a repeatable debugging loop. Finish with a command-line tool that reads and rewrites real data files.</p><ul class="tags"><li>files</li><li>exceptions</li><li>debugger</li></ul></div>
+      </details>
+      <details class="acc-item reveal">
+        <summary><span class="acc-num">06</span><span class="acc-title">Ship it: the capstone</span><span class="acc-meta">20 lessons · 9h</span><i data-lucide="chevron-down" class="acc-chev"></i></summary>
+        <div class="acc-body"><p>Git, README, tests and a deploy. You publish a real project to GitHub with a portfolio page — and a mentor review at the end.</p><ul class="tags"><li>git</li><li>tests</li><li>deploy</li></ul></div>
+      </details>
+    </div>
+  </div>
+</section>
+<section class="section" id="playground">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="kicker"><i data-lucide="terminal"></i> the playground</span>
+      <h2>Same idea, <span class="grad">four languages</span></h2>
+      <p class="sub">The greeting changes. The concept — “send a value to output” — does not.</p>
+    </header>
+    <div class="editor reveal">
+      <div class="editor-tabs" id="editorTabs" role="tablist">
+        <button class="etab active" role="tab" data-lang="python">main.py</button>
+        <button class="etab" role="tab" data-lang="javascript">index.js</button>
+        <button class="etab" role="tab" data-lang="rust">main.rs</button>
+        <button class="etab" role="tab" data-lang="go">main.go</button>
+      </div>
+      <button class="copy-btn" id="copyBtn" aria-label="Copy code"><i data-lucide="copy"></i> copy</button>
+      <pre class="code-view"><code id="codeView"></code></pre>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="mentors">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="kicker"><i data-lucide="users"></i> mentors</span>
+      <h2>Learn from people who <span class="grad">ship code</span></h2>
+      <p class="sub">Every lesson is reviewed by an engineer working in production today.</p>
+    </header>
+    <div class="grid cards-3">
+      <article class="card person reveal">
+        <div class="avatar av-green">MC</div>
+        <h3>Maya Chen</h3><p class="role">Staff Engineer · distributed systems</p>
+        <p>Wrote the "how memory actually works" module everyone quotes back at us.</p>
+        <div class="socials"><a href="#" aria-label="Github"><i data-lucide="github"></i></a><a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a></div>
+      </article>
+      <article class="card person reveal">
+        <div class="avatar av-yellow">DP</div>
+        <h3>Devon Park</h3><p class="role">Systems Programmer · Rust</p>
+        <p>Believes every beginner should be able to explain a stack trace out loud.</p>
+        <div class="socials"><a href="#" aria-label="Github"><i data-lucide="github"></i></a><a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a></div>
+      </article>
+      <article class="card person reveal">
+        <div class="avatar av-blue">SR</div>
+        <h3>Sofia Ruiz</h3><p class="role">Web Platform Lead</p>
+        <p>Teaches the capstone: git, tests, deploy, and how to ask for a review.</p>
+        <div class="socials"><a href="#" aria-label="Github"><i data-lucide="github"></i></a><a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="voices">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="kicker"><i data-lucide="quote"></i> student output</span>
+      <h2>They typed <span class="grad">Hello, World!</span> too</h2>
+    </header>
+    <div class="grid cards-3">
+      <blockquote class="card quote reveal"><p>I had quit two courses before this one. Writing real code from week one changed everything.</p><footer>Jordan A. <span>career switcher</span></footer></blockquote>
+      <blockquote class="card quote reveal"><p>The debugging module alone paid for the whole thing. My first job interview was about error messages.</p><footer>Priya S. <span>QA engineer</span></footer></blockquote>
+      <blockquote class="card quote reveal"><p>Finished with a deployed CLI tool and three GitHub repos. Still using the course as a reference.</p><footer>Marco T. <span>self-taught dev</span></footer></blockquote>
+    </div>
+  </div>
+</section>
+<section class="section alt" id="pricing">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="kicker"><i data-lucide="tag"></i> pricing</span>
+      <h2>Pay once. <span class="grad">Keep it forever.</span></h2>
+      <p class="sub">Every tier includes the full curriculum. Pick how much support you want.</p>
+    </header>
+    <div class="grid cards-3">
+      <article class="card plan reveal">
+        <h3>Explorer</h3><p class="price"><span class="cur">$</span>0<span class="per">/forever</span></p>
+        <ul class="features-list">
+          <li><i data-lucide="check"></i> Modules 01–02</li>
+          <li><i data-lucide="check"></i> Community access</li>
+          <li><i data-lucide="x"></i> No mentor reviews</li>
+        </ul>
+        <a href="#cta" class="btn btn-ghost block">Get started</a>
+      </article>
+      <article class="card plan popular reveal">
+        <span class="pill"><i data-lucide="star"></i> most popular</span>
+        <h3>Masterclass</h3><p class="price"><span class="cur">$</span>199<span class="per">/once</span></p>
+        <ul class="features-list">
+          <li><i data-lucide="check"></i> All 84 lessons</li>
+          <li><i data-lucide="check"></i> Capstone + deployment</li>
+          <li><i data-lucide="check"></i> 2 mentor code reviews</li>
+          <li><i data-lucide="check"></i> Lifetime updates</li>
+        </ul>
+        <a href="#cta" class="btn btn-primary block">Enroll now</a>
+      </article>
+      <article class="card plan reveal">
+        <h3>Teams</h3><p class="price"><span class="cur">$</span>49<span class="per">/seat</span></p>
+        <ul class="features-list">
+          <li><i data-lucide="check"></i> Everything in Masterclass</li>
+          <li><i data-lucide="check"></i> Cohort dashboard</li>
+          <li><i data-lucide="check"></i> SSO &amp; invoicing</li>
+        </ul>
+        <a href="#cta" class="btn btn-ghost block">Talk to us</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container narrow">
+    <header class="sec-head reveal">
+      <span class="kicker"><i data-lucide="help-circle"></i> faq</span>
+      <h2>Questions, <span class="grad">answered</span></h2>
+    </header>
+    <div class="acc">
+      <details class="acc-item reveal" open><summary><span class="acc-title">Do I need any experience?</span><i data-lucide="chevron-down" class="acc-chev"></i></summary>
+        <div class="acc-body"><p>No. The course starts at “what is a program”. If you can use a browser and a keyboard, you can take it.</p></div></details>
+      <details class="acc-item reveal"><summary><span class="acc-title">Which language do I learn first?</span><i data-lucide="chevron-down" class="acc-chev"></i></summary>
+        <div class="acc-body"><p>Python — it keeps the noise down so the concepts stay loud. Rust, JavaScript and Go appear in the playground section for comparison.</p></div></details>
+      <details class="acc-item reveal"><summary><span class="acc-title">How much time per week?</span><i data-lucide="chevron-down" class="acc-chev"></i></summary>
+        <div class="acc-body"><p>Six to eight hours. Lessons are 8–15 minutes and each ends with a task, so you learn by doing, not by binge-watching.</p></div></details>
+      <details class="acc-item reveal"><summary><span class="acc-title">What if it isn't for me?</span><i data-lucide="chevron-down" class="acc-chev"></i></summary>
+        <div class="acc-body"><p>Full refund within 30 days of your first lesson. No forms, no questions.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="cta">
+  <div class="container cta-inner reveal">
+    <h2>Your first program is<br><span class="grad">one line away</span></h2>
+    <p class="sub">Join the next cohort. Applications close when seats run out.</p>
+    <form class="signup" id="signupForm" novalidate>
+      <input type="email" id="email" placeholder="you@example.com" required aria-label="Email address">
+      <button class="btn btn-primary" type="submit">Reserve my seat <i data-lucide="arrow-right"></i></button>
+    </form>
+    <p class="fineprint" id="formMsg">No spam. One email a week, unsubscribe anytime.</p>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="container foot-inner">
+    <div class="foot-brand">
+      <a href="#home" class="brand"><span class="prompt">$</span> hello<span class="brand-dot">.</span>world</a>
+      <p>An advanced introduction to programming for people who want to actually understand it.</p>
+    </div>
+    <nav aria-label="Footer"><h4>Course</h4><a href="#curriculum">Curriculum</a><a href="#playground">Playground</a><a href="#pricing">Pricing</a></nav>
+    <nav aria-label="Footer"><h4>Company</h4><a href="#mentors">Mentors</a><a href="#voices">Students</a><a href="#faq">FAQ</a></nav>
+    <div class="foot-social">
+      <h4>Elsewhere</h4>
+      <div class="socials">
+        <a href="#" aria-label="Github"><i data-lucide="github"></i></a>
+        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+        <a href="#" aria-label="Youtube"><i data-lucide="youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="container foot-bottom">
+    <span>© <span id="year"></span> hello.world — built with Gruvbox &amp; Lucide</span>
+    <span class="mono">print("Hello, World!")</span>
+  </div>
+</footer>
+
+<script src="vendor/icons.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

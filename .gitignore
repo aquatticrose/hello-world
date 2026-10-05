@@ -1,0 +1,16 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# logs & temp
+*.log
+*.tmp
+~$*
+
+# local env / secrets
+.env
+.env.local
+
+# node (not used, just in case)
+node_modules/
